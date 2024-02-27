@@ -28,3 +28,42 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(25%);
+  transform: translateX(25%);
+}
+
+button.round {
+  background-color: #48abe0;
+  color: white;
+  border: none;
+  /* padding: 5px; */
+  font-size: 3em;
+  font-weight: light;
+  height: 2.1em;
+  width: 2.1em;
+  line-height: 2.1em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+button.round:hover {
+  background-color: #65b9e6;
+}
+
+button.round:active {
+  transform: translateY(2px);
+}
