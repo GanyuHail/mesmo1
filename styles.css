@@ -1,12 +1,13 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 canvas {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
 .container {
   height: 200px;
   position: relative;
+  z-index: 99;
 }
 
 .vertical-center {
@@ -48,7 +50,6 @@ button.round {
   background-color: #48abe0;
   color: white;
   border: none;
-  /* padding: 5px; */
   font-size: 3em;
   font-weight: light;
   height: 2.1em;
@@ -58,7 +59,6 @@ button.round {
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
-  z-index: 1;
 }
 
 button.round:hover {
